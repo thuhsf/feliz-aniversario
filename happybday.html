@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: sans-serif;
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimentos padrão */
+            /* --- OPÇÃO 1: Fundo Roxo --- */
+            /* background-color: #e6e6fa; /* Lilás claro */
+            /* background: linear-gradient(to bottom, #d8bfd8, #b19cd9); /* Gradiente Roxo */
+
+            /* --- OPÇÃO 2: Imagem de Fundo --- */
+            /* Descomente a linha abaixo e troque 'URL_DA_SUA_IMAGEM.jpg' pelo link ou caminho da imagem */
+             background-image: url('Selfie time.jpeg');
+             background-size: cover; /* Faz a imagem cobrir todo o fundo */
+             background-position: center; /* Centraliza a imagem */
+             background-repeat: no-repeat; /* Evita que a imagem se repita */
+             background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+
+            display: flex; /* Centraliza o painel */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+            color: #333; /* Cor do texto padrão */
+        }
+
+        /* Estilo do Painel */
+        .painel-mensagem {
+            background-color: rgba(255, 255, 255, 0.9); /* Branco com leve transparência */
+            padding: 30px 40px;
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            text-align: center;
+            max-width: 500px; /* Largura máxima do painel */
+        }
+
+        /* Estilo do Título */
+        .painel-mensagem h1 {
+            color: #6a0dad; /* Roxo vibrante */
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do Parágrafo */
+        .painel-mensagem p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555; /* Cinza escuro */
+        }
+
+        /* Estilo do Botão Interativo */
+        .botao-especial {
+            background-color: #8a2be2; /* Azul-violeta */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 25px; /* Botão arredondado */
+            cursor: pointer; /* Muda o cursor para indicar clicável */
+            margin-top: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+        }
+
+        /* Efeito ao passar o mouse sobre o botão */
+        .botao-especial:hover {
+            background-color: #6a0dad; /* Roxo mais escuro */
+            transform: scale(1.05); /* Leve aumento no tamanho */
+        }
+
+        /* Efeito ao clicar no botão */
+        .botao-especial:active {
+            transform: scale(0.95); /* Leve diminuição no tamanho */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="painel-mensagem">
+        <h1> happy birthday, my person :3 !</h1>
+        <p>
+            eu poderia dizer mil palavras, mas eu só tenho a te agradecer por tudo. você mudou a minha vida! e você fazer parte da minha é uma grande dádiva.
+        </p>
+        <p>
+            que você continue sendo essa pessoa incrível, iluminando a vida de todos ao seu redor. saiba que a sua amizade é o melhor presente para mim! te amo ❤️
+        </p>
+        <button class="botao-especial" onclick="mostrarSurpresa()"> clique aqui para uma surpresa!</button>
+    </div>
+
+    <script>
+        // Função JavaScript para o botão
+        function mostrarSurpresa() {
+            alert("🥳🎉 You are my person, you will always be my person! 🥳🎉");
+            // Você pode adicionar outras ações aqui se quiser!
+        }
+    </script>
+
+</body>
+</html>
